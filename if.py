@@ -1,5 +1,8 @@
-edad = int(input("¿Cuál es tu edad? "))
-if edad < 18: 
-    print ("Eres menor de edad.")
+edad = int(input("¿Cuantos años tienes? "))
+if edad <= 4:
+    precio = 0
+elif edad <= 18:
+    precio = 70
 else:
-    print("Eres mayor de edad.")
+    precio = 140
+print("El precio de la entrada es", "$" ,precio)
