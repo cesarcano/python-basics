@@ -1,3 +1,6 @@
+# Crear un programa que reciba N numero de nombres y los ordene alfabéticamente
+# Utilizar Listas y funciones
+
 frase = input("Introduce una frase: ")
 letra = input("Introduce una letra")
 contador = 0
