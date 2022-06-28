@@ -4,11 +4,21 @@
 # 3. En que año nací suponiendo que estamos en el 2022
 # Utilizar funciones (def) 
 
-edad = int(input("¿Cuantos años tienes? "))
-if edad <= 4:
-    precio = 0
-elif edad <= 18:
-    precio = 70
-else:
-    precio = 140
-print("El precio de la entrada es", "$" ,precio)
+def esMayordeEdad(age):
+    if age < 18:
+        print("Eres menor de edad")
+    else:
+        print ("Eres mayor de edad")
+
+def retirementAge(e):
+    print ("te faltan",65-e,"años para retirarte")
+
+def yearBorn(n):
+    print ("naciste en",2022-n)
+
+nombre = str(input("¿Cual es tu nombre?"))
+edad =int(input("¿Cuantos años tienes? "))
+
+esMayordeEdad(edad)
+retirementAge(edad)
+yearBorn(edad)
