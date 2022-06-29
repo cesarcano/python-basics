@@ -1,22 +1,29 @@
-listCar = [
-    {
-        "marca" : "bmw",
-        "año" : "2012",
-        "modelo" : "120i",
-        "color" : "blanco"
-    },
-    {
-        "marca" : "honda",
-        "año" : "2016",
-        "modelo" : "fit",
-        "color" : "azul"
-    },
-    {
-        "marca" : "volkswagen",
-        "año" : "2014",
-        "modelo" : "mk5",
-        "color" : "cafe"
-    }
-]
-print(listCar)
+from typing import Dict
+
+
+listCar = []
+
+def createCar() : 
+    auto = {}
+    auto["marca"] = input("¿Que marca es tu vehiculo?")   
+    auto["año"] = (input("¿Que año es tu vehiculo?"))
+    auto["modelo"] = (input("¿Que modelo es tu vehiculo?"))
+    auto["color"] = (input("¿Que color es tu vehiculo?"))
+    print (auto)
+    listCar.append(auto)
+
+def main():
+    respuesta = "si"
+    
+    while respuesta == "si":
+        createCar()
+        respuesta = input("¿desea agregar un nuevo vehiculo?")
+    
+    print(listCar)
+
+    
+main()
+
+
+
 
