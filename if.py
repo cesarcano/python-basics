@@ -15,10 +15,11 @@ def retirementAge(e):
 
 def yearBorn(n):
     print ("naciste en",2022-n)
-
+    
 nombre = str(input("¿Cual es tu nombre?"))
 edad =int(input("¿Cuantos años tienes? "))
 
 esMayordeEdad(edad)
 retirementAge(edad)
 yearBorn(edad)
+
